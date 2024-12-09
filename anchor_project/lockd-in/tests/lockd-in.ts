@@ -1,6 +1,6 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { LockIn } from "../target/types/lock_in";
+import { LockdIn } from "../target/types/lockd_in";
 import { PublicKey, Keypair, LAMPORTS_PER_SOL, SystemProgram } from "@solana/web3.js";
 import { expect } from "chai";
 
@@ -8,7 +8,7 @@ describe("lock-in", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.LockIn as Program<LockIn>;
+  const program = anchor.workspace.LockdIn as Program<LockdIn>;
   
   // Test accounts
   const user = Keypair.generate();

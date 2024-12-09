@@ -3,7 +3,6 @@ use crate::errors::TodoError;
 use crate::state::{Task, TaskPriority, TaskStatus, TaskCategory, UserTodoList};
 
 #[derive(Accounts)]
-#[instruction(bump: u8)]
 pub struct CreateTask<'info> {
     #[account(mut)]
     pub user: Signer<'info>,

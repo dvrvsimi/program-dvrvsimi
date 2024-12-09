@@ -10,7 +10,7 @@ use instructions::*;
 use state::*;
 
 #[program]
-pub mod lock_in {
+pub mod lockd_in {
     use super::*;
 
     pub fn create_todo_task(
